@@ -1,0 +1,4 @@
+                                    Selectors for button "Get in Touch"
+"[class*='home-top-section__button-container']>[class*='button']" - css selector
+"//a[contains(@class, 'home-top-section')]/div" - first xpath selector
+"//a[@class='home-top-section__button-container']/div[text()='Get in Touch']" - second xpath selector
