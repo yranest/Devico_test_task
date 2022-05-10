@@ -11,8 +11,8 @@ public class LegsCounting {
     }
 
     private static long countNumberOfLegsOfAllAnimals() {
-        JSONObject jo = parseDataFromJsonToJsonObject(System.getProperty("user.dir") + "/src/main/java/dataForProject/animals.json");
-        return (long) jo.get("pigs") + (long) jo.get("chickens") + (long) jo.get("cows");
+        JSONObject jsonAnimals = parseDataFromJsonToJsonObject(System.getProperty("user.dir") + "/src/main/java/dataForProject/animals.json");
+        return (long) jsonAnimals.get("pigs") + (long) jsonAnimals.get("chickens") + (long) jsonAnimals.get("cows");
     }
 
     private static JSONObject parseDataFromJsonToJsonObject(String pathToJsonFile) {
